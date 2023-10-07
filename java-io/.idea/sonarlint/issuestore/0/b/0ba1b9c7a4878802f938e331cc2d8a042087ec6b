@@ -1,0 +1,6 @@
+
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 29 to the 15 allowed.(Çµí‘8ı×¬ê­1
+>	java:S131""Add a default case to this switch.(ìè²ë8†Ø¬ê­1
+p
+java:S4042'"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(ë“«øÿÿÿÿ8‹Ø¬ê­1
