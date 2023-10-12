@@ -1,0 +1,9 @@
+
+T
+java:S2789="2Replace this null literal by an "Optional" object.(Ò„“Ëıÿÿÿÿ8ñÖŸŸ²1
+k
+java:S2259C"IA "NullPointerException" could be thrown; "foundPerson" is nullable here.(­œîøüÿÿÿÿ8×êöŸ²1
+h
+java:S2259?"KA "NullPointerException" could be thrown; "updatedPerson" is nullable here.(¶Òˆò8×êöŸ²1
+‰
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(œû¿Ø8ÙêöŸ²1
