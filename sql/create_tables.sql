@@ -8,11 +8,11 @@ CREATE TABLE IF NOT EXISTS competition
     CONSTRAINT competition_pkey PRIMARY KEY (competition_id)
 );
 
-COMMENT ON TABLE competition IS 'В таблице competition хранится информация о проводимых соревнованиях';
-COMMENT ON COLUMN competition.competition_id IS 'ID соревнования';
-COMMENT ON COLUMN competition.competition_id IS 'наименование соревнования';
-COMMENT ON COLUMN competition.competition_id IS 'мировой рекорд';
-COMMENT ON COLUMN competition.competition_id IS 'дата установки мирового рекорда';
+COMMENT ON TABLE competition IS 'Р’ С‚Р°Р±Р»РёС†Рµ competition С…СЂР°РЅРёС‚СЃСЏ РёРЅС„РѕСЂРјР°С†РёСЏ Рѕ РїСЂРѕРІРѕРґРёРјС‹С… СЃРѕСЂРµРІРЅРѕРІР°РЅРёСЏС…';
+COMMENT ON COLUMN competition.competition_id IS 'ID СЃРѕСЂРµРІРЅРѕРІР°РЅРёСЏ';
+COMMENT ON COLUMN competition.competition_id IS 'РЅР°РёРјРµРЅРѕРІР°РЅРёРµ СЃРѕСЂРµРІРЅРѕРІР°РЅРёСЏ';
+COMMENT ON COLUMN competition.competition_id IS 'РјРёСЂРѕРІРѕР№ СЂРµРєРѕСЂРґ';
+COMMENT ON COLUMN competition.competition_id IS 'РґР°С‚Р° СѓСЃС‚Р°РЅРѕРІРєРё РјРёСЂРѕРІРѕРіРѕ СЂРµРєРѕСЂРґР°';
 
 
 
@@ -28,13 +28,13 @@ CREATE TABLE IF NOT EXISTS sportsman
     CONSTRAINT sportsman_pkey PRIMARY KEY (sportsman_id)
 );
 
-COMMENT ON TABLE sportsman IS 'В таблице sportsman хранится информация о спортсменах';
-COMMENT ON COLUMN sportsman.sportsman_id IS 'ID спортсмена';
-COMMENT ON COLUMN sportsman.sportsman_name IS 'имя спортсмена';
-COMMENT ON COLUMN sportsman.rank IS 'разряд спортсмена';
-COMMENT ON COLUMN sportsman.year_of_birth IS 'год рождения';
-COMMENT ON COLUMN sportsman.personal_record IS 'персональный рекорд';
-COMMENT ON COLUMN sportsman.country IS 'страна спортсмена';
+COMMENT ON TABLE sportsman IS 'Р’ С‚Р°Р±Р»РёС†Рµ sportsman С…СЂР°РЅРёС‚СЃСЏ РёРЅС„РѕСЂРјР°С†РёСЏ Рѕ СЃРїРѕСЂС‚СЃРјРµРЅР°С…';
+COMMENT ON COLUMN sportsman.sportsman_id IS 'ID СЃРїРѕСЂС‚СЃРјРµРЅР°';
+COMMENT ON COLUMN sportsman.sportsman_name IS 'РёРјСЏ СЃРїРѕСЂС‚СЃРјРµРЅР°';
+COMMENT ON COLUMN sportsman.rank IS 'СЂР°Р·СЂСЏРґ СЃРїРѕСЂС‚СЃРјРµРЅР°';
+COMMENT ON COLUMN sportsman.year_of_birth IS 'РіРѕРґ СЂРѕР¶РґРµРЅРёСЏ';
+COMMENT ON COLUMN sportsman.personal_record IS 'РїРµСЂСЃРѕРЅР°Р»СЊРЅС‹Р№ СЂРµРєРѕСЂРґ';
+COMMENT ON COLUMN sportsman.country IS 'СЃС‚СЂР°РЅР° СЃРїРѕСЂС‚СЃРјРµРЅР°';
 
 
 
@@ -52,9 +52,9 @@ CREATE TABLE IF NOT EXISTS result
         ON UPDATE CASCADE ON DELETE CASCADE
 );
 
-COMMENT ON TABLE result IS 'В таблице result хранится информация  о результатах соревнований';
-COMMENT ON COLUMN result.competition_id IS 'ID соревнования';
-COMMENT ON COLUMN result.sportsman_id IS 'ID спортсмена';
-COMMENT ON COLUMN result.result IS 'результат спортсмена';
-COMMENT ON COLUMN result.city IS 'место проведения';
-COMMENT ON COLUMN result.hold_date IS 'дата проведения';
+COMMENT ON TABLE result IS 'Р’ С‚Р°Р±Р»РёС†Рµ result С…СЂР°РЅРёС‚СЃСЏ РёРЅС„РѕСЂРјР°С†РёСЏ  Рѕ СЂРµР·СѓР»СЊС‚Р°С‚Р°С… СЃРѕСЂРµРІРЅРѕРІР°РЅРёР№';
+COMMENT ON COLUMN result.competition_id IS 'ID СЃРѕСЂРµРІРЅРѕРІР°РЅРёСЏ';
+COMMENT ON COLUMN result.sportsman_id IS 'ID СЃРїРѕСЂС‚СЃРјРµРЅР°';
+COMMENT ON COLUMN result.result IS 'СЂРµР·СѓР»СЊС‚Р°С‚ СЃРїРѕСЂС‚СЃРјРµРЅР°';
+COMMENT ON COLUMN result.city IS 'РјРµСЃС‚Рѕ РїСЂРѕРІРµРґРµРЅРёСЏ';
+COMMENT ON COLUMN result.hold_date IS 'РґР°С‚Р° РїСЂРѕРІРµРґРµРЅРёСЏ';
